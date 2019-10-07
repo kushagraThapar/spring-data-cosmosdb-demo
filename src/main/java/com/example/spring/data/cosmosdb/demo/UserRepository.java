@@ -14,4 +14,8 @@ import reactor.core.publisher.Flux;
 public interface UserRepository extends ReactiveCosmosRepository<User, String> {
 
     Flux<User> findByFirstName(String firstName);
+
+    Flux<User> findByLastName(String lastName);
+
+    Flux<User> deleteByLastName(String lastName);
 }
