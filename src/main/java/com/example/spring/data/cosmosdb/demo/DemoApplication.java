@@ -140,12 +140,12 @@ public class DemoApplication implements CommandLineRunner {
     public void setup() {
         // For this example, remove all of the existing records.
         LOGGER.info("Deleting existing resources");
-        this.repository.deleteAll().subscribe();
+        this.repository.deleteAll().block();
     }
 
     @PreDestroy
     public void cleanup() {
         LOGGER.info("Cleaning up resources");
-        this.repository.deleteAll().subscribe();
+        this.repository.deleteAll().block();
     }
 }
