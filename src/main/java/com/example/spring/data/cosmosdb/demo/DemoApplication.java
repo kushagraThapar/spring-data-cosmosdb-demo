@@ -18,7 +18,6 @@ import reactor.core.publisher.Mono;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
